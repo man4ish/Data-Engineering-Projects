@@ -1,0 +1,7 @@
+CHROM,POS,ID,REF,ALT,QUAL,FILTER,SAMPLE_ID
+chr1,10176,rs1,A,AC,50,PASS,Sample1
+chr1,10177,.,T,A,10,LowQual,Sample1
+chr1,10178,rs2,T,C,99,PASS,Sample2
+chr2,20200,rs3,G,A,20,PASS,Sample1
+chr2,20201,rs4,A,G,5,LowQual,Sample2
+
