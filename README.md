@@ -12,9 +12,6 @@ This repository contains various data engineering and data science projects that
   - [luigi_data_pipeline](#luigi_data_pipeline)
   - [variant-filtering-pyspark](#variant-filtering-pyspark)
 - [Submodules](#submodules)
-- [How to Use](#how-to-use)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Overview
 
