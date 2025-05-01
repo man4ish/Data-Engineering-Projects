@@ -1,3 +1,0 @@
-[submodule "rnaseq_airflow"]
-	path = rnaseq_airflow
-	url = git@github.com:man4ish/rnaseq_airflow.git

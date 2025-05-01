@@ -1,0 +1,29 @@
+{
+  "s3": {
+    "input_bucket": "your-input-bucket-name",
+    "output_bucket": "your-output-bucket-name",
+    "input_prefix": "input-data/",
+    "output_prefix": "results/"
+  },
+  "files": {
+    "fastq1": "sample_R1.fastq.gz",
+    "fastq2": "sample_R2.fastq.gz",
+    "adapters": "adapters.fa",
+    "kallisto_index": "transcripts.idx",
+    "gtf": "genes.gtf",
+    "ref_tar": "genome_star.tar.gz",
+    "ref_flat": "refFlat.txt",
+    "ribosomal_intervals": "ribo_intervals.interval_list",
+    "ref_seq": "reference.fasta"
+  },
+  "parameters": {
+    "prefix": "sample",
+    "skewer_threads": 4,
+    "min_read_length": 30,
+    "kallisto_threads": 4,
+    "bootstrap_samples": 100,
+    "star_threads": 8
+  },
+  "working_dir": "/tmp/rnaseq_demo"
+}
+
