@@ -1,3 +1,37 @@
+"""
+luigi_pipeline.py
+
+This module defines a two-step Luigi pipeline for basic data processing.
+
+Tasks:
+    1. LoadData: Reads a date-partitioned CSV file from the `data/` directory,
+       performs a simple transformation (doubling the 'value' column), and writes
+       the processed data to the `output/` directory.
+
+    2. SummarizeData: Depends on LoadData. It generates a statistical summary
+       (mean, std, etc.) of the processed data and saves the summary as a text
+       file in the `output/` directory.
+
+Features:
+    - Uses Luigi for dependency management and workflow orchestration.
+    - Accepts a `--process-date` parameter to manage daily data partitions.
+    - Includes error handling and logging for traceability.
+    - Supports reproducible and modular data processing tasks.
+
+Usage:
+    Run this module using the Luigi CLI:
+
+        python luigi_pipeline.py SummarizeData --process-date 2023-12-15 --local-scheduler
+
+Requirements:
+    - pandas
+    - luigi
+    - A raw input file at `data/raw_data_<YYYY-MM-DD>.csv` with a 'value' column.
+
+Author:
+    Manish Kuma
+"""
+
 import luigi
 import pandas as pd
 import logging
