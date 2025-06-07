@@ -40,6 +40,12 @@ Each project is organized in its own folder with:
    - **Tech Stack**: PySpark, Python
    - **Focus**: Big data processing, data transformation, performance optimization
 
+6. **[ML Pipeline with Airflow, Kubernetes, and Docker](ml-airflow-k8s-pipeline/README.md)**  
+   - **Description**: Built an end-to-end machine learning training pipeline orchestrated with Apache Airflow using KubernetesPodOperator to execute Dockerized jobs in a local Minikube cluster. Designed for portability to AWS (EKS, SageMaker).
+   - **Tech Stack**: Apache Airflow, Kubernetes, Docker, Minikube, Python
+   - **Focus**: MLOps, workflow orchestration, containerized model training, cloud-readiness
+      
+
 ---
 
 ### 🛠️ Tools & Technologies
